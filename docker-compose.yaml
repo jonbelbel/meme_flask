@@ -1,8 +1,9 @@
 version: "3.7"
 
 services:
-  build:
-    context: ./
-  ports:
-    - 5555:80
+  meme_flask:
+    build:
+      context: ./
+    ports:
+      - 5555:80
   
