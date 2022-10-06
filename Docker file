@@ -1,0 +1,10 @@
+FROM python:3.8
+
+WORKDIR /app
+COPY . .
+
+RUN pip install -r requirments.txt
+
+ENTRYPOINT ["python"]
+
+CMD ["python3 meme_flask.py"]
