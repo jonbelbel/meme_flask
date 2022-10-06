@@ -2,6 +2,7 @@ version: "3.8"
 
 services:
   meme_flask:
-    image: meme_flask:latest
+    build:
+      context: ./
     ports:
       - 5555:80
